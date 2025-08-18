@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contest Helper</title> <link rel="stylesheet" href="popup.css">
+    <script src="marked.min.js"></script>
+</head>
+<body>
+    <h3>Contest Helper</h3>
+    <div id="controls">
+        <select id="languageSelector">
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <button id="getHelp">Get Help</button>
+    </div>
+    <div id="copyContainer" style="display: none; position: relative;">
+        <button id="copyBtn" title="Copy Code">Copy Code</button>
+    </div>
+    <div id="loader" style="display: none; text-align: center;">
+        <div class="spinner"></div>
+    </div>
+    <div id="output"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
