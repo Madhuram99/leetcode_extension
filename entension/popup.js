@@ -37,7 +37,7 @@ document.getElementById("getHelp").addEventListener("click", async () => {
 
             console.log(`Fetching ${language} solution for ${platform} problem:`, title);
 
-            const response = await fetch("http://127.0.0.1:8000/api/solve/", {
+            const response = await fetch("https://leetcode-extension-tsdj.onrender.com/api/solve/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ title, url, language, platform }) // Send the detected platform

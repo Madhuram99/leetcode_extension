@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: leetcode-backend
+    env: python
+    # Tell Render to run all commands from this directory
+    rootDir: leetcode_backend
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn backend.wsgi:application --timeout 120"
