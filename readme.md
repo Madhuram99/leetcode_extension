@@ -1,5 +1,5 @@
 Leetcode-Helper/
-├── extension/                  # Chrome Extension source code
+├── extension/                  # Chrome 
 │   ├── icon.png
 │   ├── manifest.json
 │   ├── marked.min.js
